@@ -87,3 +87,19 @@ git push <my_username>
 ```
 
 then navigate to your GitHub repository online to open a pull request.
+
+### Windows 10
+On Windows 10, there is an unresolved issue with npm/gitbook related to fs-events. A workaround
+(using *git bash*) involves first running gitbook in one terminal: 
+```bash
+cd alice-analysis-tutorial/
+gitbook install # Only needed on first run
+gitbook serve
+```
+and then in another terminal in the 
+```bash
+cd alice-analysis-tutorial/
+rm ./_book -r -f
+```
+
+You'll need to do this second step every time you run `gitbook serve`.
