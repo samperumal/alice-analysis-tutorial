@@ -1,0 +1,825 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>🐳 Using alidock · ALICE Analysis Tutorial</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-panels/panels.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-block-align/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../css/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="custom.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../start/">
+            
+                <a href="../start/">
+            
+                    
+                    Getting started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../start/cert.html">
+            
+                <a href="../start/cert.html">
+            
+                    
+                    Get a Grid certificate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Build ALICE software
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="alidock.html">
+            
+                <a href="alidock.html">
+            
+                    
+                    🐳 Using alidock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="custom.html">
+            
+                <a href="custom.html">
+            
+                    
+                    🐌 Custom installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="prereq-centos7.html">
+            
+                <a href="prereq-centos7.html">
+            
+                    
+                    Prerequisites for CentOS 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="prereq-macos.html">
+            
+                <a href="prereq-macos.html">
+            
+                    
+                    Prerequisites for macOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="prereq-ubuntu.html">
+            
+                <a href="prereq-ubuntu.html">
+            
+                    
+                    Prerequisites for Ubuntu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="prereq-fedora.html">
+            
+                <a href="prereq-fedora.html">
+            
+                    
+                    Prerequisites for Fedora
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="build.html">
+            
+                <a href="build.html">
+            
+                    
+                    🛠 Build the packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="precomp.html">
+            
+                <a href="precomp.html">
+            
+                    
+                    📦 Use the precompiled binaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../analysis/welcome.html">
+            
+                <a href="../analysis/welcome.html">
+            
+                    
+                    Writing an analysis task
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../analysis/classes.html">
+            
+                <a href="../analysis/classes.html">
+            
+                    
+                    AliAnalysisTaskSE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../analysis/alianalysistaskmytask.html">
+            
+                <a href="../analysis/alianalysistaskmytask.html">
+            
+                    
+                    Your analysis task
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../analysis/local.html">
+            
+                <a href="../analysis/local.html">
+            
+                    
+                    Running locally
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../analysis/rungrid.html">
+            
+                <a href="../analysis/rungrid.html">
+            
+                    
+                    Running on Grid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../analysis/lego.html">
+            
+                <a href="../analysis/lego.html">
+            
+                    
+                    The LEGO train system
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../analysis/monalisa.html">
+            
+                <a href="../analysis/monalisa.html">
+            
+                    
+                    AliMonitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../analysis/trouble.html">
+            
+                <a href="../analysis/trouble.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../analysis/streamer.html">
+            
+                <a href="../analysis/streamer.html">
+            
+                    
+                    The ROOT streamer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../analysis/destructor.html">
+            
+                <a href="../analysis/destructor.html">
+            
+                    
+                    Destructors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../analysis/">
+            
+                <a href="../analysis/">
+            
+                    
+                    Analysis tutorial exercises
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../analysis/setup.html">
+            
+                <a href="../analysis/setup.html">
+            
+                    
+                    Step 1 - Setup the tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../analysis/running.html">
+            
+                <a href="../analysis/running.html">
+            
+                    
+                    Step 2 - Running the task
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../analysis/modify.html">
+            
+                <a href="../analysis/modify.html">
+            
+                    
+                    Step 3 - Modify the task
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../analysis/track.html">
+            
+                <a href="../analysis/track.html">
+            
+                    
+                    Step 4 -The track loop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../analysis/pid.html">
+            
+                <a href="../analysis/pid.html">
+            
+                    
+                    Step 5 -Particle identification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../analysis/MC.html">
+            
+                <a href="../analysis/MC.html">
+            
+                    
+                    Step 6 -Using Monte Carlo data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../analysis/grid.html">
+            
+                <a href="../analysis/grid.html">
+            
+                    
+                    Step 7 -Run your code on GRID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../analysis/bonus.html">
+            
+                <a href="../analysis/bonus.html">
+            
+                    
+                    Bonus content
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../analysis/hints.html">
+            
+                <a href="../analysis/hints.html">
+            
+                    
+                    Some hints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../analysis/ROOT5-to-6.html">
+            
+                <a href="../analysis/ROOT5-to-6.html">
+            
+                    
+                    Transition from ROOT5 to ROOT6
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >🐳 Using alidock</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x1F433;-using-alidock">&#x1F433; Using alidock</h1>
+<p><a href="https://badge.fury.io/py/alidock" target="_blank"><img src="https://badge.fury.io/py/alidock.svg" alt="PyPI version"></a></p>
+<p><a href="https://github.com/dberzano/alidock" target="_blank">alidock</a> is our way to provide users with a consistent
+environment and precompiled builds. It is our recommended way to install and use ALICE software on
+your computer as it makes support and your life easier.</p>
+<h2 id="install-docker">Install Docker</h2>
+<p>Docker has some <a href="https://docs.docker.com/install/" target="_blank">extensive documentation</a> covering the
+installation.</p>
+<h3 id="&#x1F427;-linux-post-installation">&#x1F427; Linux post-installation</h3>
+<p>By default, <code>docker</code> does not run as non-privileged user. You need to add your user to the <code>docker</code>
+group. Follow <a href="https://docs.docker.com/install/linux/linux-postinstall/" target="_blank">the instructions here</a>: it
+should be sufficient to run:</p>
+<pre><code class="lang-bash">sudo groupadd docker           <span class="hljs-comment"># create docker group</span>
+sudo usermod <span class="hljs-_">-a</span>G docker <span class="hljs-variable">$USER</span>  <span class="hljs-comment"># add me to the docker group</span>
+</code></pre>
+<p>You need to log out and log back in for the group settings to be effective.</p>
+<h3 id="&#x1F34F;-macos-post-installation">&#x1F34F; macOS post-installation</h3>
+<p>On macOS, Docker runs in a lightweight virtual machine. There is some fine tuning to do once for all
+for making it work at a reasonable speed.</p>
+<p>First off, you should make sure you are running at least macOS High Sierra, and your main disk&apos;s
+filesystem is APFS (not supported by earlier versions of macOS). Check your filesystem by opening
+the <strong>Disk Utility</strong> application. Your main disk (whose name is <strong>Macintosh HD</strong> by default) should
+report APFS as filesystem:</p>
+<center><img src="images/disk-utility-apfs.png" width="500"></center>
+
+<p><em>&#x26A0;&#xFE0F; Your disk should have been converted automatically to APFS during your High Sierra installation if
+possible. If this did not happen, you will still be able to use Docker, but it will be slower.</em></p>
+<p>Start the Docker app now. A Docker icon will appear in the menu bar. Click on it, then click
+<strong>Preferences...</strong> on the menu, and select the <strong>Disk</strong> tab. Look at the <strong>Disk image location</strong>:
+the filename must end with <code>.raw</code> and not with <code>.qcow2</code>, as in the picture below:</p>
+<center><img src="images/docker-macos-disk.png" width="500"></center>
+
+<p>If the extension is <code>.qcow2</code>, and your disk is APFS, you need to reset your Docker installation to
+factory settings by clicking the <strong>Reset</strong> bomb, and then the <strong>Reset to factory defaults</strong> button:</p>
+<center><img src="images/docker-macos-reset.png" width="500"></center>
+
+<p><em>&#x26A0;&#xFE0F; You will lose your Docker volumes, if any, so beware. If you have a recent operating system with
+a solid state drive, and your installation of Docker is fresh, you probably don&apos;t need this step.</em></p>
+<p>Docker runs in a lightweight virtual machine with not so many resources allocated to it by default.
+Click now the <strong>Advanced</strong> tab and you will see the following window:</p>
+<center><img src="images/docker-macos-vm.png" width="500"></center>
+
+<p>Set the number of CPUs to the maximum allowed by your Mac, and at least 4 GiB of memory. You may
+want to add even more memory in case you have troubles running some software.</p>
+<p>You need to press the <strong>Apply &amp; Restart</strong> button to apply the settings.</p>
+<p>Graphical applications in the container will require <a href="https://www.xquartz.org/" target="_blank">XQuartz</a> installed
+on your Mac. Go to their <a href="https://www.xquartz.org/" target="_blank">website</a>, download the most recent package, and
+install it.</p>
+<p><em>&#x26A0;&#xFE0F; Logging out and back in again is required after the installation.</em></p>
+<p>Test if it works by opening a terminal and typing <code>xcalc</code>. An ugly calculator should pop up.</p>
+<h2 id="get-alidock">Get alidock</h2>
+<p><a href="https://pypi.org/project/alidock/" target="_blank">alidock</a> is available as a PyPI package. Get it with:</p>
+<pre><code class="lang-bash">bash &lt;(curl -fsSL https://bit.ly/alidock-installer)
+</code></pre>
+<p>The installation will refuse to continue in case your Docker installation does not work. You will have
+to fix it first by following <a href="#install-docker">these steps</a>. At the end of the installation
+you may be advised to <strong>open a new terminal</strong> in order to use it.</p>
+<p>alidock self-updates automatically whenever a new stable release is out! &#x1F389;</p>
+<h2 id="use-the-alidock-environment">Use the alidock environment</h2>
+<p>Just type:</p>
+<pre><code class="lang-bash">alidock
+</code></pre>
+<p>and you will have a shell inside your custom environment. This is how your prompt looks like when
+you are inside alidock:</p>
+<pre><code>[alidock] ~ $&gt;
+</code></pre><p>The first time you run it, a new container will be created. Subsequent runs will open new shells in
+the same container. You can run <code>alidock</code> as many times you want.</p>
+<p>Your container&apos;s home directory is called <code>/home/alidock</code> and it is also visible from outside the
+container as <code>~/alidock</code>. This means that your data will not be lost when you stop the container,
+and you will be able to use your favourite graphical editor <em>from outside</em> the alidock environment.</p>
+<p>The container stays running in the background. If you don&apos;t need it any longer, you may want to stop
+it (as said, your data will not be lost):</p>
+<pre><code class="lang-bash">alidock stop
+</code></pre>
+<h2 id="build-software-from-within-alidock">Build software from within alidock</h2>
+<p>alidock comes with <a href="https://alisw.github.io/alibuild" target="_blank">aliBuild</a> preinstalled and configured. You do
+not need to install it. Furthermore, whenever alidock updates the base image, it will also get the
+newest aliBuild version, if any.</p>
+<p>You can follow the following instructions for building the packages in an alidock session.
+Remember, you are in an alidock session if you see <code>[alidock]</code> at your prompt.</p>
+<ul>
+<li><a href="build.html">&#x1F6E0; Build the packages</a></li>
+</ul>
+<h2 id="housekeeping">Housekeeping</h2>
+<p>Docker and the container directory may get very large in size. From time to time, you may want to
+do some housekeeping.</p>
+<h3 id="clean-up-old-containers">Clean up old containers</h3>
+<p>Docker has a command to perform a cleanup of unused space. Run it from <em>outside</em> the container:</p>
+<pre><code class="lang-bash">docker system prune <span class="hljs-_">-f</span>
+</code></pre>
+<p>alidock will suggest you to run it whenever the container image is updated.</p>
+<h3 id="clean-up-old-builds">Clean up old builds</h3>
+<p>You may want to run, within an alidock session:</p>
+<pre><code class="lang-bash">aliBuild cleanup --aggressive
+</code></pre>
+<p>to clean up temporary space.</p>
+<h3 id="manual-and-thorough-cleanup">Manual and thorough cleanup</h3>
+<p>aliBuild caches some stuff under <code>~/.sw</code> from inside the container. You can cleanup your
+installation completely by running, from within an alidock session:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> ~/.sw
+<span class="hljs-built_in">shopt</span> <span class="hljs-_">-s</span> extglob       <span class="hljs-comment"># enable shell negative matches</span>
+<span class="hljs-built_in">echo</span> rm -rf !(MIRROR)  <span class="hljs-comment"># remove all except MIRROR</span>
+</code></pre>
+<p><code>~/.sw/MIRROR</code> is the place where all the source code of all the packages is stored. <strong>You don&apos;t
+want to remove it, ever:</strong> if you keep it, you will save lots of time during subsequent builds.</p>
+<h3 id="share-mirror-from-your-laptop">Share MIRROR from your laptop</h3>
+<p>Do you have a previous aliBuild installation on your laptop? Do you want to migrate your current
+aliBuild installation? You already have the <code>MIRROR</code> directory somewhere on your laptop.</p>
+<p>If you have followed <a href="custom.html">the manual instructions</a>, this directory is called:</p>
+<pre><code>$ALIBUILD_WORK_DIR/MIRROR
+</code></pre><p>From <em>outside</em> the container, do the following: first off, move your current <code>MIRROR</code> directory
+inside the container:</p>
+<pre><code class="lang-bash">mkdir -p ~/alidock/.sw
+rm -rf ~/alidock/.sw/MIRROR  <span class="hljs-comment"># if it exists already, get rid of it and use the laptop&apos;s</span>
+mv <span class="hljs-variable">$ALIBUILD_WORK_DIR</span>/MIRROR ~/alidock/.sw/MIRROR
+</code></pre>
+<p>then link it to the old location:</p>
+<pre><code class="lang-bash">ln -nfs ~/alidock/.sw/MIRROR <span class="hljs-variable">$ALIBUILD_WORK_DIR</span>/MIRROR
+</code></pre>
+<p>This will allow your laptop installation and your container installation to share the same mirror
+directory.</p>
+<p><strong>&#x26A0;&#xFE0F;  Your laptop directory will link the container&apos;s directory. The opposite will not work.</strong></p>
+<h3 id="macos-exclude-sw-from-backup-and-indexing">macOS: exclude .sw from backup and indexing</h3>
+<p>Your <code>.sw</code> directory contains disposable data that already exists in remote repositories, plus it
+gets very big. alidock automatically excludes this directory from your Time Machine backups and
+Spotlight indexing.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Build ALICE software">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="custom.html" class="navigation navigation-next " aria-label="Next page: 🐌 Custom installation">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"🐳 Using alidock","level":"1.3.1","depth":2,"next":{"title":"🐌 Custom installation","level":"1.3.2","depth":2,"path":"building/custom.md","ref":"building/custom.md","articles":[{"title":"Prerequisites for CentOS 7","level":"1.3.2.1","depth":3,"path":"building/prereq-centos7.md","ref":"building/prereq-centos7.md","articles":[]},{"title":"Prerequisites for macOS","level":"1.3.2.2","depth":3,"path":"building/prereq-macos.md","ref":"building/prereq-macos.md","articles":[]},{"title":"Prerequisites for Ubuntu","level":"1.3.2.3","depth":3,"path":"building/prereq-ubuntu.md","ref":"building/prereq-ubuntu.md","articles":[]},{"title":"Prerequisites for Fedora","level":"1.3.2.4","depth":3,"path":"building/prereq-fedora.md","ref":"building/prereq-fedora.md","articles":[]}]},"previous":{"title":"Build ALICE software","level":"1.3","depth":1,"path":"building/README.md","ref":"building/README.md","articles":[{"title":"🐳 Using alidock","level":"1.3.1","depth":2,"path":"building/alidock.md","ref":"building/alidock.md","articles":[]},{"title":"🐌 Custom installation","level":"1.3.2","depth":2,"path":"building/custom.md","ref":"building/custom.md","articles":[{"title":"Prerequisites for CentOS 7","level":"1.3.2.1","depth":3,"path":"building/prereq-centos7.md","ref":"building/prereq-centos7.md","articles":[]},{"title":"Prerequisites for macOS","level":"1.3.2.2","depth":3,"path":"building/prereq-macos.md","ref":"building/prereq-macos.md","articles":[]},{"title":"Prerequisites for Ubuntu","level":"1.3.2.3","depth":3,"path":"building/prereq-ubuntu.md","ref":"building/prereq-ubuntu.md","articles":[]},{"title":"Prerequisites for Fedora","level":"1.3.2.4","depth":3,"path":"building/prereq-fedora.md","ref":"building/prereq-fedora.md","articles":[]}]},{"title":"🛠 Build the packages","level":"1.3.3","depth":2,"path":"building/build.md","ref":"building/build.md","articles":[]},{"title":"📦 Use the precompiled binaries","level":"1.3.4","depth":2,"path":"building/precomp.md","ref":"building/precomp.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","panels@git+https://github.com/lhcb/gitbook-plugin-panels.git#117012fdc18c96831cb88196980c0ea73b0c87b8","collapsible-menu","block-align","page-toc"],"styles":{"website":"css/website.css"},"pluginsConfig":{"collapsible-menu":{},"block-align":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"panels":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ALICE Analysis Tutorial","gitbook":"*","description":"Introduction to the common analysis techniques and tools of ALICE"},"file":{"path":"building/alidock.md","mtime":"2018-12-16T16:39:38.313Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-16T16:40:57.285Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-panels/panels.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

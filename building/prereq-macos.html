@@ -1,0 +1,863 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Prerequisites for macOS · ALICE Analysis Tutorial</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-panels/panels.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-block-align/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../css/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="prereq-ubuntu.html" />
+    
+    
+    <link rel="prev" href="prereq-centos7.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../start/">
+            
+                <a href="../start/">
+            
+                    
+                    Getting started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../start/cert.html">
+            
+                <a href="../start/cert.html">
+            
+                    
+                    Get a Grid certificate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Build ALICE software
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="alidock.html">
+            
+                <a href="alidock.html">
+            
+                    
+                    🐳 Using alidock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="custom.html">
+            
+                <a href="custom.html">
+            
+                    
+                    🐌 Custom installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="prereq-centos7.html">
+            
+                <a href="prereq-centos7.html">
+            
+                    
+                    Prerequisites for CentOS 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2.2" data-path="prereq-macos.html">
+            
+                <a href="prereq-macos.html">
+            
+                    
+                    Prerequisites for macOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="prereq-ubuntu.html">
+            
+                <a href="prereq-ubuntu.html">
+            
+                    
+                    Prerequisites for Ubuntu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="prereq-fedora.html">
+            
+                <a href="prereq-fedora.html">
+            
+                    
+                    Prerequisites for Fedora
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="build.html">
+            
+                <a href="build.html">
+            
+                    
+                    🛠 Build the packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="precomp.html">
+            
+                <a href="precomp.html">
+            
+                    
+                    📦 Use the precompiled binaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../analysis/welcome.html">
+            
+                <a href="../analysis/welcome.html">
+            
+                    
+                    Writing an analysis task
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../analysis/classes.html">
+            
+                <a href="../analysis/classes.html">
+            
+                    
+                    AliAnalysisTaskSE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../analysis/alianalysistaskmytask.html">
+            
+                <a href="../analysis/alianalysistaskmytask.html">
+            
+                    
+                    Your analysis task
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../analysis/local.html">
+            
+                <a href="../analysis/local.html">
+            
+                    
+                    Running locally
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../analysis/rungrid.html">
+            
+                <a href="../analysis/rungrid.html">
+            
+                    
+                    Running on Grid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../analysis/lego.html">
+            
+                <a href="../analysis/lego.html">
+            
+                    
+                    The LEGO train system
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../analysis/monalisa.html">
+            
+                <a href="../analysis/monalisa.html">
+            
+                    
+                    AliMonitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../analysis/trouble.html">
+            
+                <a href="../analysis/trouble.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../analysis/streamer.html">
+            
+                <a href="../analysis/streamer.html">
+            
+                    
+                    The ROOT streamer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../analysis/destructor.html">
+            
+                <a href="../analysis/destructor.html">
+            
+                    
+                    Destructors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../analysis/">
+            
+                <a href="../analysis/">
+            
+                    
+                    Analysis tutorial exercises
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../analysis/setup.html">
+            
+                <a href="../analysis/setup.html">
+            
+                    
+                    Step 1 - Setup the tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../analysis/running.html">
+            
+                <a href="../analysis/running.html">
+            
+                    
+                    Step 2 - Running the task
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../analysis/modify.html">
+            
+                <a href="../analysis/modify.html">
+            
+                    
+                    Step 3 - Modify the task
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../analysis/track.html">
+            
+                <a href="../analysis/track.html">
+            
+                    
+                    Step 4 -The track loop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../analysis/pid.html">
+            
+                <a href="../analysis/pid.html">
+            
+                    
+                    Step 5 -Particle identification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../analysis/MC.html">
+            
+                <a href="../analysis/MC.html">
+            
+                    
+                    Step 6 -Using Monte Carlo data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../analysis/grid.html">
+            
+                <a href="../analysis/grid.html">
+            
+                    
+                    Step 7 -Run your code on GRID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../analysis/bonus.html">
+            
+                <a href="../analysis/bonus.html">
+            
+                    
+                    Bonus content
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../analysis/hints.html">
+            
+                <a href="../analysis/hints.html">
+            
+                    
+                    Some hints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../analysis/ROOT5-to-6.html">
+            
+                <a href="../analysis/ROOT5-to-6.html">
+            
+                    
+                    Transition from ROOT5 to ROOT6
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Prerequisites for macOS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="alibuild-prerequisites-for-macos">aliBuild prerequisites for macOS</h1>
+<p>ALICE software compiles just fine on macOS using Apple-provided build tools. We support exclusively
+the following two versions of macOS:</p>
+<ul>
+<li>High Sierra (10.13)</li>
+<li>Mojave (10.14)</li>
+</ul>
+<p><strong>Any other version of macOS has to be considered not supported.</strong> If you are in doubt about
+upgrading your operating system and you still don&apos;t see the new version here, then please refrain
+from upgrading.</p>
+<p><strong>Please follow these instructions every time you install a new macOS version and every time you get
+a newer Xcode! This is non-optional!</strong></p>
+<p><div class="panel panel-primary"><div class="panel-heading"><h3 class="panel-title" onclick="javascript:toggle(8572919780);" id="upgrade-your-macosxcode-with-care"><i class="fa fa-info-circle"></i> Upgrade your macOS/Xcode with care<span id="heading-8572919780"></span></h3></div><div class="panel-body" id="panel-8572919780"><p>The instructions you see on this page have been validated <strong>on October 1, 2018</strong> using:</p>
+<ul>
+<li>macOS 10.14</li>
+<li>Xcode 10.0 (10A255)</li>
+</ul>
+<p>Even minor version updates on macOS/Xcode may break our build chain, and it might take us days
+before fixing it. Keep an eye on this page to see if we have tested the latest versions first.</p>
+</div></div></p>
+<h2 id="get-or-upgrade-xcode">Get or upgrade Xcode</h2>
+<p>Xcode is the Apple-provided toolkit for developing software on Apple devices. Xcode is required as
+it contains the necessary compilers and build tools used by ALICE.</p>
+<p>Get it from the App Store <a href="https://itunes.apple.com/gh/app/xcode/id497799835?mt=12" target="_blank">by clicking here</a>:
+if the link does not work, just open the App Store and search for Xcode. The installation is free of
+charge, but it takes quite some space on your Mac.</p>
+<p>When installed, open it: if it asks you to install additional required components, please approve
+the action.</p>
+<p>Installation&apos;s not over yet. Additional components (the &quot;command-line tools&quot;) are required. Open a
+terminal and run:</p>
+<pre><code class="lang-bash">xcode-select --install
+</code></pre>
+<p>In case they are already installed, you&apos;ll see the following message:</p>
+<pre><code>xcode-select: error: command line tools are already installed, use &quot;Software Update&quot; to install updates
+</code></pre><p><strong>This is important:</strong> once Xcode and the command-line tools are installed, every update will occur
+graphically via the App Store.</p>
+<p>Now, at your first installation, you need to accept the Xcode license. If the above command did not
+ask you anything, just open a terminal and write:</p>
+<pre><code class="lang-bash">git
+</code></pre>
+<p>without any further option. You will be prompted in case there is a license to accept. In case the
+license has been accepted already, you&apos;ll just see the list of options for the <code>git</code> command.</p>
+<h2 id="get-or-upgrade-homebrew">Get or upgrade Homebrew</h2>
+<p><a href="https://brew.sh" target="_blank">Homebrew</a> is a command-line package manager for macOS. It is the most popular now,
+and it is the only one we support.</p>
+<blockquote>
+<p>If you have other package managers installed, such as MacPorts or Fink, you must get rid of them
+before proceeding. They will conflict with Homebrew and ALICE software in a bad way.</p>
+</blockquote>
+<p>Note that Homebrew does not run as root. Do not prepend <code>sudo</code> to <strong>any</strong> of the following commands!</p>
+<p>Installation instructions are <a href="https://brew.sh/" target="_blank">ridiculously simple on the website</a>. Once Homebrew
+is installed, run (as suggested):</p>
+<pre><code class="lang-bash">brew doctor
+</code></pre>
+<p>and fix any potential error highlighted by the tool. <strong>Errors and warnings should not be
+overlooked!</strong> Pay close attention to warnings concerning outdated Xcode/compiler versions: you must upgrade Xcode to the latest available version before proceeding any further!</p>
+<p><div class="panel panel-primary"><div class="panel-heading"><h3 class="panel-title" onclick="javascript:toggle(8596766465);" id="clean-up-your-homebrew-installation"><i class="fa fa-info-circle"></i> Clean up your Homebrew installation<span id="heading-8596766465"></span></h3></div><div class="panel-body" id="panel-8596766465"><p>Due to a <a href="http://gnu-automake.7480.n7.nabble.com/automake-1-16-aclocal-is-unable-to-process-AM-PATH-PYTHON-with-variable-as-value-td22860.html" target="_blank">problem with the automake 1.16 package</a>,
+subsequently fixed in version 1.16.1, a Homebrew workaround has been suggested on this page.</p>
+<p>If you have applied the suggested workaround, the <code>brew doctor</code> command from above complains with
+the following message:</p>
+<pre><code>Warning: Homebrew/homebrew-core is not on the master branch
+
+Check out the master branch by running:
+  git -C &quot;$(brew --repo homebrew/core)&quot; checkout master
+</code></pre><p>To clean it up, it is better if you run the following commands (and not just the one suggested by
+<code>brew doctor</code>):</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> <span class="hljs-string">&quot;<span class="hljs-variable">$(brew --repo homebrew/core)</span>&quot;</span>
+git checkout master
+git fetch origin master
+git reset --hard origin/master
+</code></pre>
+</div></div></p>
+<p>When you are done fixing the warnings, upgrade all the currently installed Homebrew packages:</p>
+<pre><code class="lang-bash">brew upgrade
+</code></pre>
+<p>It is now time to install a bunch of required packages. Copy and paste this to your terminal
+(warning: long line):</p>
+<pre><code class="lang-bash">brew install autoconf automake boost coreutils gettext gmp hub isl libmpc libtool m4 modules mpfr openssl pkg-config readline modules xz libpng perl
+</code></pre>
+<p>If you have just upgraded your Xcode or macOS, you should run <code>brew reinstall</code> instead, in order to
+force the reinstallation of already installed packages. You also might want to run <code>brew cleanup</code> at
+the end to free up some space.</p>
+<p>Now, open your <code>~/.bash_profile</code> (you should have a default one; create one if it does not exist,
+and bear in mind that <code>~</code> represents your home directory) and add the following content:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">export</span> PATH=<span class="hljs-string">&quot;/usr/local/opt/gettext/bin:/usr/local/bin:<span class="hljs-variable">$PATH</span>&quot;</span>
+</code></pre>
+<p>The line above tells your shell (assuming it&apos;s Bash) where to find Homebrew programs. To check if it
+works, close the terminal, open a new one, and type:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">type</span> autopoint
+</code></pre>
+<p>You should get as an answer:</p>
+<pre><code>autopoint is /usr/local/opt/gettext/bin/autopoint
+</code></pre><h2 id="get-or-upgrade-gfortran">Get or upgrade gfortran</h2>
+<p>Your Xcode installation is missing a Fortran compiler, unfortunately. We need it for some parts of
+our code, therefore you must install it.</p>
+<p>The GCC project has a <a href="https://gcc.gnu.org/wiki/GFortranBinaries#MacOS" target="_blank">downloads page for macOS</a>: get the version that corresponds to your operating
+system the most. This means that if gfortran for your operating system version is not out yet, you
+can safely download the one for the previous version.</p>
+<p>Downloads are dmg files: just double-click on them with Finder and follow the graphical installation
+procedure.</p>
+<p>When done, open a terminal and check if you can find it:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">type</span> gfortran
+</code></pre>
+<p>You should obtain:</p>
+<pre><code>gfortran is /usr/local/bin/gfortran
+</code></pre><h2 id="disable-system-integrity-protection">Disable System Integrity Protection</h2>
+<p>Starting from El Capitan (10.11), Apple has introduced a security feature called <a href="https://www.macworld.com/article/2986118/security/how-to-modify-system-integrity-protection-in-el-capitan.html" target="_blank">System Integrity
+Protection</a>, or SIP.</p>
+<p>At the moment, unfortunately, ALICE software requires this feature to be turned off.</p>
+<p>To turn SIP off:</p>
+<ul>
+<li>Reboot your Mac in <em>Recovery Mode</em>. That is, before macOS starts up, hold down <code>Command-R</code> and
+keep both keys pressed until the Apple logo appears.</li>
+<li>From the <strong>Utilities</strong> menu open a <strong>Terminal</strong>.</li>
+<li>Type: <code>csrutil disable</code>: a message will notify the success of your operation.</li>
+<li>Select <strong>Restart</strong> from the &#xF8FF; menu.</li>
+</ul>
+<p><strong>Note:</strong> you can always re-enable it using <code>csrutil enable</code> instead.</p>
+<h2 id="get-or-upgrade-pip">Get or upgrade pip</h2>
+<p><code>pip</code> is the Python package manager. Our build tool
+<a href="https://pypi.python.org/pypi/alibuild/" target="_blank">aliBuild</a> and other Python dependencies are installed
+through it.</p>
+<p>In case you are using <a href="https://www.anaconda.com/" target="_blank">Python from Anaconda</a> or Python from Homebrew
+then you have <code>pip</code> already. Check it by typing:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">type</span> pip
+</code></pre>
+<p>at your shell prompt. In case you don&apos;t use Anaconda, please install <code>pip</code> with this command:</p>
+<pre><code class="lang-bash">sudo easy_install pip
+</code></pre>
+<p>Note that you need admin permissions for running the above command. Once done, check that <code>pip</code> got
+installed under <code>/usr/local/bin</code>:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">type</span> pip
+</code></pre>
+<p>It should yield:</p>
+<pre><code>pip is /usr/local/bin/pip
+</code></pre><p>Note that the Python version installed by means of <code>easy_install</code> might be too old. Check it with:</p>
+<pre><code class="lang-bash">pip --version
+</code></pre>
+<p>You must have at least pip 9.0.1. If this is not the case, please run:</p>
+<pre><code class="lang-bash">pip install --upgrade pip==9.0.1
+</code></pre>
+<h2 id="get-or-upgrade-required-python-packages">Get or upgrade required Python packages</h2>
+<p>Some Python packages are required for building our software. They are mostly related to ROOT 6. Just
+run:</p>
+<pre><code class="lang-bash">sudo pip install --upgrade --force-reinstall matplotlib numpy certifi ipython==5.1.0 ipywidgets ipykernel notebook metakernel pyyaml
+</code></pre>
+<blockquote>
+<p>It is important to specify <code>ipython</code>&apos;s version explicitly.</p>
+</blockquote>
+<h2 id="exclude-your-work-directory-from-spotlight">Exclude your work directory from Spotlight</h2>
+<p>Mac users have two nice features, Time Machine for backups and Spotlight for searches, that might
+have a detrimental effect on your Mac&apos;s performances.</p>
+<p>Spotlight, in particular, indexes <em>every</em> created file, and since during our build and installation
+processes we create <em>a lot</em> of files we don&apos;t really want to index, it&apos;s better to tell Spotlight
+not to index our working directory.</p>
+<p>We are assuming our working directory is <code>~/alice</code>. Before telling Spotlight to exclude it, we need
+to create an empty one, so in a Terminal do:</p>
+<pre><code class="lang-bash">mkdir ~/alice
+</code></pre>
+<p>(you can also use the Finder for that.) Then, go to the <strong>&#xF8FF; (Apple) menu &#x2192; System preferences &#x2192;
+Spotlight</strong>. Click on the <strong>Privacy</strong> tab, then hit the <strong>+</strong> sign at the bottom of the window. Now
+select the <code>~/alice</code> directory and confirm.</p>
+<p>You are now ready for <a href="./#get-or-upgrade-alibuild">installing aliBuild and start building ALICE
+software</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="prereq-centos7.html" class="navigation navigation-prev " aria-label="Previous page: Prerequisites for CentOS 7">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="prereq-ubuntu.html" class="navigation navigation-next " aria-label="Next page: Prerequisites for Ubuntu">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Prerequisites for macOS","level":"1.3.2.2","depth":3,"next":{"title":"Prerequisites for Ubuntu","level":"1.3.2.3","depth":3,"path":"building/prereq-ubuntu.md","ref":"building/prereq-ubuntu.md","articles":[]},"previous":{"title":"Prerequisites for CentOS 7","level":"1.3.2.1","depth":3,"path":"building/prereq-centos7.md","ref":"building/prereq-centos7.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","panels@git+https://github.com/lhcb/gitbook-plugin-panels.git#117012fdc18c96831cb88196980c0ea73b0c87b8","collapsible-menu","block-align","page-toc"],"styles":{"website":"css/website.css"},"pluginsConfig":{"collapsible-menu":{},"block-align":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"panels":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ALICE Analysis Tutorial","gitbook":"*","description":"Introduction to the common analysis techniques and tools of ALICE"},"file":{"path":"building/prereq-macos.md","mtime":"2018-12-16T16:39:38.321Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-16T16:40:57.285Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-panels/panels.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
