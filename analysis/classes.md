@@ -20,10 +20,9 @@ Classes are extended structures which contain both **variables** and **functions
 ```
 Here we defined a class, called **Rectangle**, which has variables **width** and **height**, and a **method** called `GetArea` which gives us access to the members. 
 
-### Inheritcance
+### Inheritance
 
 Classes are nice and important, because they can be **derived** from one-another (a feature called **inheritance**. Look at the figure below 
-
 
 ![image](figures/inheritance.png)
 
