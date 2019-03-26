@@ -15,7 +15,7 @@ class TestRefsInMarkdownFiles(unittest.TestCase):
                             'File `{}` does not exists.'.format(path))
             checked.add(path)
             if path.endswith('.md'):
-                with open(path) as f:
+                with open(path, encoding = "utf8") as f:
                     refs = pat.findall(f.read())
                 files = [os.path.normpath(os.path.join(root, ref.split('#', 1)[0]))
                          for ref in refs if not ':' in ref ]
